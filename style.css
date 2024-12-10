@@ -1,0 +1,757 @@
+:root {
+  /* Primary Colors */
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-grey: #7f7f7f;
+  --color-light-grey: #f4f6f5;
+
+  /* Accent Colors */
+  --color-yellow: #ebd96b;
+  --color-dark-yellow: #e6c744;
+
+  /* Text Colors */
+  --color-text-black: #000000;
+  --color-text-grey: #7c7c7c;
+}
+
+/* Universal CSS */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+header,
+section,
+footer {
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 20px 100px;
+}
+
+/* Common CSS */
+a {
+  text-decoration: none;
+  color: var(--color-text-black);
+}
+
+button {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-radius: 7px;
+  padding: 8px 12px;
+  font-size: 24px;
+  line-height: 34px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Specific Sections */
+.header {
+  margin-top: 20px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+i.hamburger-menu {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-items li {
+  list-style: none;
+  color: var(--color-text-black);
+}
+
+.nav-item a {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+.sidebar__bottom--items {
+  text-transform: uppercase;
+}
+
+/*--------------------- Bannner---------------------- */
+
+.banner {
+  display: flex;
+  gap: 24px;
+  background-color: var(--color-light-grey);
+  border-radius: 60px;
+  margin-top: 56px;
+  padding: 30px 65px;
+}
+
+.right_side {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+}
+
+.right_side h1 {
+  font-weight: 900;
+  font-size: 40px;
+  margin: 0 !important;
+  text-transform: uppercase;
+}
+
+.rotated-div {
+  width: 200px;
+  transform: rotate(-2deg);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#rotateddiv1 {
+  background-color: var(--color-white);
+}
+
+#rotateddiv2 {
+  background-color: var(--color-yellow);
+}
+
+.text {
+  transform: rotate(2deg);
+  position: relative;
+}
+
+.shop-now-btn {
+  width: 220px;
+}
+
+.left_side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*--------------------- Branding---------------------- */
+
+.branding {
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-yellow);
+  height: 176px;
+}
+
+.branding-img {
+  display: flex;
+  gap: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.branding-img img {
+  max-width: 100px;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+
+/* New Arrivals  CCS*/
+.new-arrivals {
+  margin-top: 60px;
+  gap: 24px;
+}
+
+.card-container {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.new-arrivals h2 {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  cursor: pointer;
+  gap: 28px;
+}
+
+.card img {
+  width: 300px;
+  object-fit: cover;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.description p {
+  color: var(--color-grey);
+}
+
+.pay_day {
+  background-color: var(--color-dark-yellow);
+  padding: 0 20px;
+}
+
+.pay_day_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 140px;
+}
+.pay_day_container img {
+  max-width: 50%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.pay_day_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pay_day_content h2 {
+  margin: 0 !important;
+  font-weight: 900;
+  font-size: 40px;
+}
+.pay_day_content p {
+  margin: 0 !important;
+}
+.date {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+/* Young's Favorite */
+
+.favorite {
+  max-width: 1920px;
+}
+.youngFav_card-container {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+  margin-left: 100px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.download_instruction {
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.download_app {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.download_app p {
+  color: var(--color-text-grey);
+}
+
+.join_community {
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--color-dark-yellow);
+  text-align: center;
+  padding: 50px 20px;
+  color: var(--color-white);
+}
+.join-community-text {
+  max-width: 600px;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* Email Input Button */
+
+.email-input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 574px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.email-input input {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.email-input input::placeholder {
+  color: #aaa;
+}
+
+.email-input button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-input button:hover {
+  background-color: #444;
+}
+
+.footer {
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  display: flex;
+  padding: 100px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+.footer_desc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.social_media_icon {
+  width: 80px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+}
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+.links ul li:first-child {
+  font-weight: bold;
+  opacity: 1;
+}
+
+.links ul li:not(:first-child) {
+  opacity: 0.6;
+}
+
+@media (max-width: 320px) {
+  .header img {
+    max-width: 110px !important;
+  }
+
+  .banner {
+    padding: 10px !important;
+  }
+  .right_side h1 {
+    font-size: 8px !important;
+  }
+
+  .youngFav_card-container img {
+    width: 250px !important;
+  }
+  .shop-now-btn {
+    width: 100px !important;
+  }
+}
+
+@media (max-width: 468px) {
+  .right_side {
+    gap: 20px !important;
+  }
+  .right_side h1 {
+    font-size: 20px !important;
+  }
+  .shop-now-btn {
+    width: 100px !important;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .wrapper {
+    margin: 0 auto;
+    padding: 5px 10px;
+  }
+
+  i.hamburger-menu {
+    display: block;
+  }
+
+  .header img {
+    max-width: 150px;
+  }
+  .nav {
+    display: none;
+  }
+  .nav-item a {
+    font-size: 12px;
+    gap: 20px !important;
+  }
+  .nav-overlay.show {
+    right: 0;
+  }
+
+  .nav-overlay .close {
+    cursor: pointer;
+    right: -100%;
+  }
+
+  /* Banner */
+
+  .banner {
+    padding: 10px !important;
+    border-radius: 30px;
+  }
+
+  .right_side {
+    width: 100%;
+    margin-left: 20px;
+    gap: 10px;
+    font-size: 26px;
+  }
+
+  .right_side p {
+    display: none;
+  }
+  .right_side h1 {
+    font-size: 40px;
+  }
+
+  .right_side,
+  button {
+    font-size: 24px;
+  }
+
+  .left_side img {
+    height: 100% !important;
+    object-fit: fill;
+  }
+
+  .rotated-div {
+    width: 100px;
+  }
+
+  button {
+    font-size: 14px;
+    line-height: 34px;
+  }
+
+  /* Branding */
+  .branding {
+    height: 60px;
+    gap: 30px !important;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .branding-img {
+    gap: 20px;
+  }
+  .branding-img img {
+    max-width: 50px;
+    object-fit: cover;
+  }
+  .branding::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* New Arrivals Parts */
+
+  .new-arrivals {
+    margin-top: 30px;
+    gap: 12px;
+  }
+
+  .card-container {
+    overflow-x: scroll;
+    margin-top: 10px;
+    gap: 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  /* Card  */
+  .card {
+    padding: 8px;
+    gap: 16px;
+  }
+
+  .card img {
+    width: 200px;
+    object-fit: cover;
+  }
+
+  .card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .description p {
+    color: var(--color-grey);
+  }
+
+  /* Pay day Content  */
+
+  .pay_day {
+    padding: 5px 0;
+  }
+
+  .pay_day_content {
+    gap: 5px;
+  }
+  .pay_day_container {
+    gap: 10px;
+  }
+
+  .pay_day_container img {
+    width: 100%;
+    height: 100% !important;
+    object-fit: fill;
+    gap: 40px;
+  }
+
+  .pay_day_content h2 {
+    font-size: 18px;
+  }
+  .pay_day_content p {
+    font-size: 12px;
+  }
+  .date {
+    font-weight: 900;
+    font-size: 8px;
+  }
+
+  /* Young's Favorite */
+  .youngFav_card-container {
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 30px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .youngFav_card-container::-webkit-scrollbar {
+    display: none;
+  }
+  .youngFav_card-container img {
+    width: 365px;
+  }
+
+  /* Download Instruction */
+  #download_app {
+    display: none;
+  }
+
+  .download_app {
+    max-width: 230px;
+    gap: 16px;
+    margin: 30px 0;
+  }
+
+  /* JOIN Community */
+
+  .join_community {
+    gap: 10px;
+    text-align: center;
+    padding: 30px 10px;
+    color: var(--color-white);
+  }
+  .join_community h1 {
+    font-size: 16px;
+  }
+  /* Email Input Button */
+  .email-input {
+    width: 100%;
+  }
+
+  .email-input input {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .email-input input::placeholder {
+    color: #aaa;
+  }
+
+  .email-input button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .email-input button:hover {
+    background-color: #444;
+  }
+
+  /* footer */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+  }
+  .footer_desc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer_desc p {
+    font-family: "Roboto", sans-serif;
+    opacity: 0.7;
+  }
+  .social_media_icon svg {
+    width: 150px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  /*  Side bar top */
+  .sidebar__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .close {
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: 400;
+    z-index: 999;
+  }
+
+  .sidebar__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 28px;
+    margin-top: 32px;
+  }
+
+  .sidebar__bottom button {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .sidebar__bottom--items {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .sidebar__bottom--items li {
+    list-style: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  section {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .left_side img {
+    width: 100%;
+    height: 100% !important;
+    object-fit: fill;
+  }
+}
